@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <h1 id="title">Titulo Principal</h1>
+
+    <p id="paragrafo">Paragrafo!</p>
+
+    <h2 id="subtitle">Segundo Titulo</h2>
+
+    <ul id="lista">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+    </ul>
+    
+    <ul id="lista2">
+        <li class="item">Item 5</li>
+        <li class="item">Item 6</li>
+        <li class="item">Item 7</li>
+        <li class="item">Item 8</li>
+    </ul>
+    <button id="btn">Teste</button>
+    <section id="teste">
+
+        <p>Tchau...</p>
+    </section>
+    <script>
+        var title = document.querySelector("#title")
+        var lista = document.querySelector("#lista")
+        var lista2 = document.querySelector("#lista2")
+
+        title.style.color = "green"
+        lista.style.backgroundColor = "yellow"
+
+        lista2.style.cssText = " color: blue; background-color:pink; font-family:sans-serif "
+
+
+    </script>
+</body>
+</html>

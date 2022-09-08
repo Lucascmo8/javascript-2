@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.O.M.</title>
+</head>
+
+<body>
+    <h1>Titulo Principal</h1>
+
+    <p id="paragrafo">Paragrafo!</p>
+
+    <ul id="lista">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+    </ul>
+
+    <script>
+        var titulo = document.getElementsByTagName("h1")[0]
+        console.log(titulo)
+
+        var lis = document.getElementsByTagName("li")
+        console.log(lis)
+
+        var paragrafo = document.getElementById('paragrafo')
+        console.log(paragrafo)
+
+        var itens = document.getElementsByClassName('item')
+        console.log(itens)
+    </script>
+</body>
+
+</html>

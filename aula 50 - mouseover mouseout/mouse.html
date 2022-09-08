@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hide{
+        display: none;
+    }
+</style>
+<body>
+    <h1 id="title">Titulo Principal</h1>
+    <p class="hide">achou...</p>
+    <p id="paragrafo">Paragrafo!</p>
+
+    <h2 id="subtitle">Segundo Titulo</h2>
+
+    <ul id="lista">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+    </ul>
+
+    <ul id="lista2">
+        <li class="item">Item 5</li>
+        <li class="item">Item 6</li>
+        <li class="item">Item 7</li>
+        <li class="item">Item 8</li>
+    </ul>
+    <button id="btn">Teste</button>
+    <section id="teste">
+
+        <p>Tchau...</p>
+    </section>
+    <a href="#">GitHub</a>
+    <script>
+        var title = document.querySelector("#title")
+        var teste = document.querySelector(".hide")
+        title.addEventListener("mouseover" , function(){
+            this.textContent = "Mudou..."
+            this.style.cssText = "color: red; background-color:Black; font-family:sans-serif;"
+            teste.style.display = "block"
+        })
+        title.addEventListener("mouseout", function(){
+            this.textContent =  "Titulo Principal"
+            teste.style.display = "none"
+        })
+        
+    </script>
+</body>
+
+</html>

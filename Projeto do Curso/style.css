@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #e65763,#34073d);
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+main{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* task Form */
+#taskHeader{
+    position: relative;
+}
+
+#addTaskForm{
+    position: relative;
+}
+
+#taskTitle{
+    box-sizing: border-box;
+    border: 1px solid #34073d;
+    background-color: #fff;
+    color: #34073d;
+    padding: 15px;
+    width: 85%;
+    outline: none;
+}
+
+input#taskTitle::placeholder{
+    color: #34073d65;
+}
+
+#addBtn{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #34073d;
+    cursor: pointer;
+    transition: .5s;
+    width: 48px;
+    height: 48px;
+}
+
+#addBtn:hover, #addBtn:focus{
+    outline: none;
+    background-image:linear-gradient(to right, #e65763,#34073d) ;
+    color: white;
+    transition: 1s;
+}
+
+/* Lista */
+
+#taskList{
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+#taskList li{
+    width: 452px;
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border: 3px solid #34073d;
+    background-color: #fff;
+    color: #34073d;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bold;
+    margin-left: 37px;
+    margin-right: auto;
+}
+
+#taskList span{
+    /* position: static; */
+    text-align: right;
+    top: 0;
+    height: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+}
+
+.doneBtn{
+    right: 40px;
+}
+
+.cleanBtn{
+    right: 0px;
+}
+
+.hide{
+    display: none;
+}

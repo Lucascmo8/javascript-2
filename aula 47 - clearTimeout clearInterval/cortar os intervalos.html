@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Titulo Principal</h1>
+
+    <p id="paragrafo">Paragrafo!</p>
+
+    <h2 id="subtitle">Segundo Titulo</h2>
+
+    <ul id="lista">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+    </ul>
+    
+    <ul id="lista2">
+        <li class="item">Item 5</li>
+        <li class="item">Item 6</li>
+        <li class="item">Item 7</li>
+        <li class="item">Item 8</li>
+    </ul>
+    <button id="btn" onclick="fundo()">Teste</button>
+    <section id="teste">
+
+        <p>Tchau...</p>
+    </section>
+    <a href="#">GitHub</a>
+    <script>
+        var corpo = document.body
+
+        var  dia = 7
+
+        var bemVindo = setTimeout(function(){
+            alert(`Hoje é dia 7`)
+        },3000)
+
+        dia = 7
+        function fundo(){
+            setTimeout(function(){
+            corpo.style.backgroundColor = "red"},1000)
+        }
+        if(dia!= 7){
+            clearTimeout(bemVindo)
+            alert(`O dia Mudou para ${dia}`)
+        }
+
+        var interval = setInterval(function(){
+            console.log("teste de SetInterval")
+        }, 1000)
+        setTimeout(function(){
+            console.log(`Não repita mais`)
+            clearInterval(interval)
+        },10000)
+    </script>
+</body>
+</html>
